@@ -34,8 +34,38 @@ function efectoHabilidades(){
     }
 }
 
-
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+// Obtener los elementos
+const modal = document.getElementById("imageModal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+
+// Abrir el modal
+openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+// Cerrar el modal al hacer clic en la "X"
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Cerrar el modal si se hace clic fuera de la imagen
+modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+document.getElementById("downloadCV").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "./public/HV.docx.pdf"; 
+    link.download = "HV_SantiagoSanchez.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
