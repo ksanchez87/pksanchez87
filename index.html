@@ -15,569 +15,740 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-      <header>
-        <div class="logo">
-          <a href="#">Ksanchez87</a>
+    <div class="container">
+      <!-- CARD ESTÁTICA IZQUIERDA -->
+      <div class="static-card">
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="images/hero.png" alt="Santiago Sánchez" />
+          </div>
+          <h1>SANTIAGO SÁNCHEZ</h1>
+          <h2>Ingeniero de Software - Desarrollador FullStack</h2>
+          <div class="social-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61573757079276" target="_blank" class="social-btn">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/santiago23598" target="_blank" class="social-btn">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/ksanchez87" target="_blank" class="social-btn">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/santiago87/" target="_blank" class="social-btn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> santiago23598@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +57 320-784-9230</p>
+            <p><i class="fas fa-map-marker-alt"></i> Mpo. Itagui, Medellín Ant.</p>
+          </div>
+          <div class="contact-buttons">
+            <a href="https://wa.me/+34123456789" class="contact-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:tu@email.com" class="contact-btn">
+              <i class="far fa-envelope"></i>
+            </a>
+          </div>
         </div>
-        <nav id="nav">
-          <ul>
-            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-            <li><a href="#curriculum" onclick="seleccionar()">FORMACION</a></li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-          </ul>
-        </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-          <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- CONTENIDO PRINCIPAL DERECHA -->
+      <div class="main-content">
+        <!-- MENU ENCABEZADO -->
+        <div class="contenedor-header">
+          <header>
+            <nav id="nav">
+              <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">FORMACIÓN</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+              </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </header>
         </div>
-      </header>
+
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+          <div class="contenido-banner">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h2 class="typing-text">¡Hola! Soy Santiago</h1>
+                <h2 class="subtitle-text">Aplicaciones web & Desarrollo de software</h2>
+              </div>
+              <div class="tech-stack">
+                <span class="tech-item"><i class="fab fa-html5"></i>HTML</span>
+                <span class="tech-item"><i class="fab fa-css3-alt"></i>CSS3</span>
+                <span class="tech-item"><i class="fab fa-css3"></i>Tailwind CSS</span>
+                <span class="tech-item"><i class="fab fa-js"></i>JavaScript</span>
+                <span class="tech-item"><i class="fab fa-react"></i>React</span>
+                <span class="tech-item"><i class="fab fa-react"></i>Next.js</span>
+                <span class="tech-item"><i class="fab fa-node-js"></i>Node.js</span>
+                <span class="tech-item"><i class="fab fa-node-js"></i>Express</span>
+                <span class="tech-item"><i class="fab fa-python"></i>Python</span>
+                <span class="tech-item"><i class="fab fa-java"></i>Java</span>
+                <span class="tech-item"><i class="fas fa-database"></i>MySQL</span>
+                <span class="tech-item"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="hero-stats" id="stats">
+                <div class="stat-item">
+                  <span class="stat-number">1+</span>
+                  <span class="stat-label">AÑOS DE EXPERIENCIA</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">8+</span>
+                  <span class="stat-label">PROYECTOS COMPLETADOS</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">TECNOLOGÍAS DOMINADAS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION SOBRE MI -->
+        <section id="sobremi" class="sobremi">
+          <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p>
+              <span>Hola, soy Kedin Santiago Santiago Sánchez.</span> un chico apasionado por el
+              desarrollo de software con formación en Ingeniería de Software y
+              experiencia en proyectos de desarrollo, utilizando tecnologías como
+              React, Node.js, MySQL, Python y Java. Me apasiona la creación de
+              soluciones dinámicas y eficientes combinando frontend y backend para
+              ofrecer experiencias óptimas. Cuento con habilidades en HTML5, CSS3 y
+              bases de datos, me destaco por ser una persona comprometida, proactiva
+              y orientada a la resolución de problemas y el aprendizaje continuo.
+              🚀💡✨
+            </p>
+
+            <div class="fila">
+              <!-- datos personales -->
+              <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                  <li>
+                    <strong>Cumpleaños</strong>
+                    22-02-2004
+                  </li>
+                  <li>
+                    <strong>Teléfono</strong>
+                    +57 320-784-9230
+                  </li>
+                  <li>
+                    <strong>Email</strong>
+                    santiago23598@gmail.com
+                  </li>
+                  <li>
+                    <strong>Dirección</strong>
+                    Mpo. Itagui, Medellín Ant.
+                  </li>
+                  <li>
+                    <strong>Desempeño</strong>
+                    <span>Developer</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- intereses -->
+              <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                  <div class="interes">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>JUEGOS</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>MUSICA</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-plane"></i>
+                    <span>VIAJAR</span>
+                  </div>
+
+                  <div class="interes">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <span>DEPORTE</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-book"></i>
+                    <span>LIBROS</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-car"></i>
+                    <span>AUTOS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="downloadCV">
+              Descargar HV <i class="fa-solid fa-download"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+        </section>
+
+        <!-- SECCION SKILLS -->
+        <section class="skills" id="skills">
+          <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+              <!-- Technical Skills -->
+              <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fab fa-react"></i>
+                    </div>
+                    <h4>React.js</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                      </div>
+                      <span class="percentage">95%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fab fa-node-js"></i>
+                    </div>
+                    <h4>Node.js</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 89%"></div>
+                      </div>
+                      <span class="percentage">89%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h4>Tailwind & CSS</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                      </div>
+                      <span class="percentage">75%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-database"></i>
+                    </div>
+                    <h4>MySQL</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 81%"></div>
+                      </div>
+                      <span class="percentage">81%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fab fa-python"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                      </div>
+                      <span class="percentage">65%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fab fa-java"></i>
+                    </div>
+                    <h4>Java</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+                      <span class="percentage">50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Professional Skills -->
+              <div class="skills-category">
+                <h3>Professional Skills</h3>
+                <div class="skills-grid">
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Trabajo en Equipo</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                      </div>
+                      <span class="percentage">80%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-comments"></i>
+                    </div>
+                    <h4>Comunicación</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                      </div>
+                      <span class="percentage">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>Responsabilidad</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 99%"></div>
+                      </div>
+                      <span class="percentage">99%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h4>Resolución de problemas</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 94%"></div>
+                      </div>
+                      <span class="percentage">94%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-crown"></i>
+                    </div>
+                    <h4>Liderazgo</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                      </div>
+                      <span class="percentage">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-icon">
+                      <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Creatividad</h4>
+                    <div class="skill-level">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                      </div>
+                      <span class="percentage">85%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION FORMACION -->
+        <section id="curriculum" class="curriculum">
+          <div class="contenido-seccion">
+            <h2>Formación</h2>
+            <div class="fila">
+              <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                  <div class="contenido-principal">
+                    <h4>Ingeniería de Software</h4>
+                    <span class="casa">Universidad Cooperativa de Colombia</span>
+                    <span class="fecha">2021 - 2025</span>
+                  </div>
+                  <div class="indicador"></div>
+                  <div class="contenido-extendido">
+                    <p>
+                      Inicié mi formación en 2021 en la ciudad de Medellín, motivado
+                      por un plan de estudios que despertó mi interés en el desarrollo
+                      de software. A lo largo de este proceso, he aplicado mis
+                      conocimientos en proyectos reales, participando activamente en
+                      semilleros y charlas, lo que me ha permitido ampliar mis
+                      habilidades en el campo. Como trabajo de grado, desarrollé junto
+                      a mi equipo un recorrido en realidad virtual por una instalación
+                      de la universidad, el cual presentamos ante instituciones
+                      externas en representación de la universidad. Además, he asumido
+                      diversos roles dentro de equipos de desarrollo, desde analista
+                      hasta tester, lo que me ha brindado una visión integral del
+                      proceso y fortalecido mis capacidades profesionales.
+                    </p>
+                  </div>
+                </div>
+                <h3>Cursos</h3>
+                <div class="item izq">
+                  <div class="contenido-principal">
+                    <h4>Curso de React</h4>
+                    <span class="casa">videocursos.co</span>
+                    <span class="fecha">2025</span>
+                  </div>
+                  <div class="indicador"></div>
+                  <div class="contenido-extendido">
+                    <p>
+                      Este curso me permitió profundizar en React, una de las
+                      bibliotecas más utilizadas de JavaScript. Gracias a mis
+                      conocimientos en JavaScript, HTML y CSS, pude avanzar al
+                      siguiente nivel, aplicando estos fundamentos para desarrollar
+                      interfaces de usuario interactivas y eficientes.
+                    </p>
+                    <br />
+                    <a href="https://videocursos.co/verificacion/7367136E17-7349737E90-156E043A4/" target="_blank">
+                      <button class="btn-certificado">
+                        <i class="fas fa-certificate"></i>
+                        <span class="text">Certificado</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="item izq">
+                  <div class="contenido-principal">
+                    <h4>Curso de Node.js y Express</h4>
+                    <span class="casa">videocursos.co</span>
+                    <span class="fecha">2025</span>
+                  </div>
+                  <div class="indicador"></div>
+                  <div class="contenido-extendido">
+                    <p>
+                      A medida que desarrollaba proyectos más complejos, surgió la
+                      necesidad de manejar la comunicación entre la aplicación y una
+                      base de datos. Este curso fue clave para profundizar en el
+                      desarrollo del lado del servidor con Node.js y Express,
+                      permitiéndome crear API eficientes y mejorar la gestión de datos
+                      en mis aplicaciones.
+                    </p>
+                    <br />
+                    <a href="https://videocursos.co/verificacion/7367136E17-73555F1A4B-156E043A4/" target="_blank">
+                      <button class="btn-certificado">
+                        <i class="fas fa-certificate"></i>
+                        <span class="text">Certificado</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                  <div class="contenido-principal">
+                    <h4>Desarrollador FullStack Etapa practica</h4>
+                    <span class="casa">Almacontact SAS</span>
+                    <span class="fecha">Jul-2024 - Dic-2024</span>
+                  </div>
+                  <div class="indicador"></div>
+                  <div class="contenido-extendido">
+                    <p>
+                      Como parte de mi modalidad de grado, realicé mi práctica
+                      empresarial en
+                      <a href="https://almacontact.com/" target="_blank">Almacontact SAS,</a>
+                      donde apliqué mis conocimientos adquiridos tanto en mi formación
+                      académica como en mi aprendizaje autodidacta. Durante esta
+                      experiencia, enfrenté desafíos reales que me permitieron
+                      desempeñarme como desarrollador FullStack, completando con éxito
+                      diversas tareas y profundizando en el mundo del desarrollo de
+                      software. Además, adquirí experiencia en nuevas tecnologías y
+                      fortalecí mi capacidad para resolver problemas, lo que despertó
+                      aún más mi interés por seguir aprendiendo y creciendo en el
+                      área.
+                    </p>
+                    <button id="openModal" class="btn-certificado">
+                      <i class="fas fa-certificate"></i>
+                      <span class="text">Certificado</span>
+                    </button>
+                  </div>
+                </div>
+                <h3>Proyectos</h3>
+                <div class="item der">
+                  <div class="contenido-principal">
+                    <h4>EmpleaLink</h4>
+                    <span class="casa">Independiente</span>
+                    <span class="fecha">2025</span>
+                  </div>
+                  <div class="indicador"></div>
+                  <div class="contenido-extendido">
+                    <p>
+                      Este proyecto surgió del interés por desarrollar una aplicación
+                      funcional basada en un CRUD, utilizando tecnologías como React,
+                      Node.js, Express y MySQL. Diseñé un sistema eficiente que se
+                      conecta a una base de datos local, permitiendo registrar, editar
+                      y eliminar empleados de manera sencilla y organizada.
+                    </p>
+                    <br />
+                    <a href="https://crud-empleados-react-bootstrap-sweetalert-h535.vercel.app/" target="_blank">
+                      <button class="btn-interactuar">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span class="text">Interactuar</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="item der">
+                  <div class="contenido-principal">
+                    <h4>MitChat</h4>
+                    <span class="casa">Independiente</span>
+                    <span class="fecha">2025</span>
+                  </div>
+                  <div class="indicador"></div>
+                  <div class="contenido-extendido">
+                    <p>
+                      A medida que profundizaba en el desarrollo frontend y backend,
+                      comencé a explorar diversas librerías, incluyendo el uso de
+                      sockets. Como resultado, desarrollé un chat en tiempo real
+                      totalmente funcional, capaz de enviar mensajes instantáneos y
+                      garantizar una comunicación fluida entre el cliente y el
+                      servidor.
+                    </p>
+                    <br />
+                    <a href="https://socket-react-ui.vercel.app/" target="_blank">
+                      <button class="btn-interactuar">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span class="text">Interactuar</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION PORTFOLIO -->
+        <section class="portfolio" id="portfolio">
+          <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p1.jpg" alt="EmpleaLink - Sistema de Gestión de Empleados">
+                </div>
+                <div class="proyecto-info">
+                  <h3>EmpleaLink</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MySQL</span>
+                  </div>
+                  <p>Sistema de gestión de empleados con funcionalidades CRUD, desarrollado con React, Node.js y MySQL.</p>
+                  <div class="proyecto-links">
+                    <a href="https://crud-empleados-react-bootstrap-sweetalert-h535.vercel.app/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/crud-empleados-react-bootstrap-sweetalert" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p2.jpg" alt="MitChat - Chat en Tiempo Real">
+                </div>
+                <div class="proyecto-info">
+                  <h3>MitChat</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Socket.io</span>
+                    <span class="tag">Node.js</span>
+                  </div>
+                  <p>Aplicación de chat en tiempo real utilizando Socket.io para la comunicación instantánea.</p>
+                  <div class="proyecto-links">
+                    <a href="https://socket-react-ui.vercel.app/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/socket-react-ui" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p3.jpg" alt="Calculadora - Aplicación Web">
+                </div>
+                <div class="proyecto-info">
+                  <h3>Calculadora</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">CSS</span>
+                  </div>
+                  <p>Calculadora web con interfaz moderna y funcionalidades matemáticas básicas.</p>
+                  <div class="proyecto-links">
+                    <a href="https://app-calculadora-react-bootstrap.vercel.app/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/app-calculadora-react-bootstrap" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p4.png" alt="BlackJack - Juego de Cartas">
+                </div>
+                <div class="proyecto-info">
+                  <h3>BlackJack</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                  </div>
+                  <p>Implementación del clásico juego de cartas BlackJack con interfaz interactiva.</p>
+                  <div class="proyecto-links">
+                    <a href="https://black-jack-jet-mu.vercel.app/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/BlackJack" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p5.jpg" alt="AdminTask - Gestor de Tareas">
+                </div>
+                <div class="proyecto-info">
+                  <h3>AdminTask</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">LocalStorage</span>
+                    <span class="tag">CSS</span>
+                  </div>
+                  <p>Gestor de tareas con persistencia de datos en LocalStorage y diseño responsivo.</p>
+                  <div class="proyecto-links">
+                    <a href="https://administrador-de-tareas-react-icons.vercel.app/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/administrador-de-tareas-react-icons" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p6.jpg" alt="Seguridad Web - Landing Page">
+                </div>
+                <div class="proyecto-info">
+                  <h3>Seguridad Web</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                  </div>
+                  <p>Landing page moderna para servicios de seguridad web con diseño responsivo.</p>
+                  <div class="proyecto-links">
+                    <a href="https://securyty-apps-5vf8.vercel.app/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/SecurytyApps" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <div class="proyecto-img">
+                  <img src="images/p7.png" alt="AdminTask V2 - Gestor de Tareas Mejorado">
+                </div>
+                <div class="proyecto-info">
+                  <h3>AdminTask V2</h3>
+                  <div class="proyecto-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                  </div>
+                  <p>Versión mejorada del gestor de tareas con nuevas funcionalidades y diseño optimizado.</p>
+                  <div class="proyecto-links">
+                    <a href="https://ksanchez87.github.io/todo-js/" class="btn-demo" target="_blank">
+                      <i class="fas fa-globe"></i>
+                      <span>Demo</span>
+                    </a>
+                    <a href="https://github.com/ksanchez87/todo-js" class="btn-codigo" target="_blank">
+                      <i class="fab fa-github"></i>
+                      <span>Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+          <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+              <a
+                href="https://wa.me/573207849230?text=Hola%20Santiago,%20he%20revisado%20tu%20portafolio.%20Me%20gustaría%20conversar%20contigo."
+                target="_blank"
+              >
+                <img src="images/whatsapp.png" alt="whatsapp" />
+              </a>
+              <a
+                href="mailto:santiago23598@gmail.com?subject=PORTAFOLIO&body=Hola Santiago,%20he%20revisado%20tu%20Portafolio."
+                target="_blank"
+              >
+                <img src="images/gmail.png" alt="gmail" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-      <div class="contenido-banner">
-        <div class="contenedor-img">
-          <img src="images/hero.png" alt="Fotografía" />
-        </div>
-        <h1>SANTIAGO SÁNCHEZ</h1>
-        <h2>Ingeniero de Software - Desarrollador FullStack</h2>
-        <div class="redes">
-          <a
-            href="https://www.facebook.com/profile.php?id=61573757079276"
-            target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-          <a href="https://x.com/santiago23598" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a href="https://github.com/ksanchez87" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/santiago87/" target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-      <div class="contenido-seccion">
-        <h2>Sobre mí</h2>
-        <p>
-          <span>Hola, soy Santiago Sánchez.</span> un chico apasionado por el
-          desarrollo de software con formación en Ingeniería de Software y
-          experiencia en proyectos de desarrollo, utilizando tecnologías como
-          React, Node.js, MySQL, Python y Java. Me apasiona la creación de
-          soluciones dinámicas y eficientes combinando frontend y backend para
-          ofrecer experiencias óptimas. Cuento con habilidades en HTML5, CSS3 y
-          bases de datos, me destaco por ser una persona comprometida, proactiva
-          y orientada a la resolución de problemas y el aprendizaje continuo.
-          🚀💡✨
-        </p>
-
-        <div class="fila">
-          <!-- datos personales -->
-          <div class="col">
-            <h3>Datos Personales</h3>
-            <ul>
-              <li>
-                <strong>Cumpleaños</strong>
-                22-02-2004
-              </li>
-              <li>
-                <strong>Teléfono</strong>
-                +57 320-784-9230
-              </li>
-              <li>
-                <strong>Email</strong>
-                santiago23598@gmail.com
-              </li>
-              <li>
-                <strong>Dirección</strong>
-                Mpo. Itagui, Medellín Ant.
-              </li>
-              <li>
-                <strong>Desempeño</strong>
-                <span>Developer</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- intereses -->
-          <div class="col">
-            <h3>Intereses</h3>
-            <div class="contenedor-intereses">
-              <div class="interes">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>JUEGOS</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-headphones"></i>
-                <span>MUSICA</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-plane"></i>
-                <span>VIAJAR</span>
-              </div>
-
-              <div class="interes">
-                <i class="fa-solid fa-person-hiking"></i>
-                <span>DEPORTE</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-book"></i>
-                <span>LIBROS</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-car"></i>
-                <span>AUTOS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button id="downloadCV">
-          Descargar HV <i class="fa-solid fa-download"></i>
-          <span class="overlay"></span>
-        </button>
-      </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-      <div class="contenido-seccion">
-        <h2>Skills</h2>
-        <div class="fila">
-          <!-- Technical Skill -->
-          <div class="col">
-            <h3>Technical Skills</h3>
-            <div class="skill">
-              <span>Tailwind & CSS</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>75%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Node.js</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>89%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>React.js</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>95%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>MySQL</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>81%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Python</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>55%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Professional Skills -->
-          <div class="col">
-            <h3>Professional Skills</h3>
-            <div class="skill">
-              <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Comunicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Responsabilidad</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>99%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Liderazgo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Resolución de problemas</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>94%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCION FORMACION -->
-    <section id="curriculum" class="curriculum">
-      <div class="contenido-seccion">
-        <h2>Formación</h2>
-        <div class="fila">
-          <div class="col izquierda">
-            <h3>Educación</h3>
-            <div class="item izq">
-              <h4>Ingeniería de Software</h4>
-              <span class="casa">Universidad Cooperativa de Colombia</span>
-              <span class="fecha">2021 - 2025</span>
-              <p>
-                Inicié mi formación en 2021 en la ciudad de Medellín, motivado
-                por un plan de estudios que despertó mi interés en el desarrollo
-                de software. A lo largo de este proceso, he aplicado mis
-                conocimientos en proyectos reales, participando activamente en
-                semilleros y charlas, lo que me ha permitido ampliar mis
-                habilidades en el campo. Como trabajo de grado, desarrollé junto
-                a mi equipo un recorrido en realidad virtual por una instalación
-                de la universidad, el cual presentamos ante instituciones
-                externas en representación de la universidad. Además, he asumido
-                diversos roles dentro de equipos de desarrollo, desde analista
-                hasta tester, lo que me ha brindado una visión integral del
-                proceso y fortalecido mis capacidades profesionales.
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <h3>Cursos</h3>
-            <div class="item izq">
-              <h4>Curso de React</h4>
-              <span class="casa">videocursos.co</span>
-              <span class="fecha">2025</span>
-              <p>
-                Este curso me permitió profundizar en React, una de las
-                bibliotecas más utilizadas de JavaScript. Gracias a mis
-                conocimientos en JavaScript, HTML y CSS, pude avanzar al
-                siguiente nivel, aplicando estos fundamentos para desarrollar
-                interfaces de usuario interactivas y eficientes.
-              </p>
-              <br />
-              <a
-                href="https://videocursos.co/verificacion/7367136E17-7349737E90-156E043A4/"
-                target="_blank"
-              >
-                <button class="btn-53">
-                  <div class="original">Certificado</div>
-                  <div class="letters">
-                    <span>C</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>t</span>
-                    <span>i</span>
-                    <span>f</span>
-                    <span>i</span>
-                    <span>c</span>
-                    <span>a</span>
-                    <span>d</span>
-                    <span>o</span>
-                  </div>
-                </button>
-              </a>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>Curso de Node.js y Express</h4>
-              <span class="casa">videocursos.co</span>
-              <span class="fecha">2025</span>
-              <p>
-                A medida que desarrollaba proyectos más complejos, surgió la
-                necesidad de manejar la comunicación entre la aplicación y una
-                base de datos. Este curso fue clave para profundizar en el
-                desarrollo del lado del servidor con Node.js y Express,
-                permitiéndome crear API eficientes y mejorar la gestión de datos
-                en mis aplicaciones.
-              </p>
-              <br />
-              <a
-                href="https://videocursos.co/verificacion/7367136E17-73555F1A4B-156E043A4/"
-                target="_blank"
-              >
-                <button class="btn-53">
-                  <div class="original">Certificado</div>
-                  <div class="letters">
-                    <span>C</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>t</span>
-                    <span>i</span>
-                    <span>f</span>
-                    <span>i</span>
-                    <span>c</span>
-                    <span>a</span>
-                    <span>d</span>
-                    <span>o</span>
-                  </div>
-                </button>
-              </a>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col derecha">
-            <h3>Experiencia de trabajo</h3>
-            <div class="item der">
-              <h4>Desarrollador FullStack Etapa practica</h4>
-              <span class="casa">Almacontact SAS</span>
-              <span class="fecha">Jul-2024 - Dic-2024</span>
-              <p>
-                Como parte de mi modalidad de grado, realicé mi práctica
-                empresarial en
-                <a
-                  href="https://www.almacontact.com.co/es/empresa/oficinas-y-sitios/"
-                  target="_blank"
-                  >Almacontact SAS,</a
-                >
-                donde apliqué mis conocimientos adquiridos tanto en mi formación
-                académica como en mi aprendizaje autodidacta. Durante esta
-                experiencia, enfrenté desafíos reales que me permitieron
-                desempeñarme como desarrollador FullStack, completando con éxito
-                diversas tareas y profundizando en el mundo del desarrollo de
-                software. Además, adquirí experiencia en nuevas tecnologías y
-                fortalecí mi capacidad para resolver problemas, lo que despertó
-                aún más mi interés por seguir aprendiendo y creciendo en el
-                área.
-              </p>
-              <br />
-              <br />
-              <button class="btn-53" id="openModal">
-                <div class="original">Certificado</div>
-                <div class="letters">
-                  <span>C</span><span>e</span><span>r</span><span>t</span
-                  ><span>i</span><span>f</span><span>i</span><span>c</span
-                  ><span>a</span><span>d</span><span>o</span>
-                </div>
-              </button>
-              <div class="conectord">
-                <div class="circulod"></div>
-                <div id="imageModal" class="modal">
-                  <div class="modal-content">
-                    <button class="close-btn" id="closeModal">X</button>
-                    <img src="images/c-laboral.png" alt="Certificado" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h3>Proyectos</h3>
-            <div class="item der">
-              <h4>EmpleaLink</h4>
-              <span class="casa">Independiente</span>
-              <span class="fecha">2025</span>
-              <p>
-                Este proyecto surgió del interés por desarrollar una aplicación
-                funcional basada en un CRUD, utilizando tecnologías como React,
-                Node.js, Express y MySQL. Diseñé un sistema eficiente que se
-                conecta a una base de datos local, permitiendo registrar, editar
-                y eliminar empleados de manera sencilla y organizada.
-              </p>
-              <br />
-              <a
-                href="https://crud-empleados-react-bootstrap-sweetalert-h535.vercel.app/"
-                target="_blank"
-              >
-                <button class="btn-53">
-                  <div class="original">Interactuar</div>
-                  <div class="letters">
-                    <span>I</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>c</span>
-                    <span>t</span>
-                    <span>u</span>
-                    <span>a</span>
-                    <span>r</span>
-                  </div>
-                </button>
-              </a>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>MitChat</h4>
-              <span class="casa">Independiente</span>
-              <span class="fecha">2025</span>
-              <p>
-                A medida que profundizaba en el desarrollo frontend y backend,
-                comencé a explorar diversas librerías, incluyendo el uso de
-                sockets. Como resultado, desarrollé un chat en tiempo real
-                totalmente funcional, capaz de enviar mensajes instantáneos y
-                garantizar una comunicación fluida entre el cliente y el
-                servidor.
-              </p>
-              <br />
-              <a href="https://socket-react-ui.vercel.app/" target="_blank">
-                <button class="btn-53">
-                  <div class="original">Interactuar</div>
-                  <div class="letters">
-                    <span>I</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>c</span>
-                    <span>t</span>
-                    <span>u</span>
-                    <span>a</span>
-                    <span>r</span>
-                  </div>
-                </button>
-              </a>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-      <div class="contenido-seccion">
-        <h2>PORTFOLIO</h2>
-        <div class="galeria">
-          <a
-            href="https://crud-empleados-react-bootstrap-sweetalert-h535.vercel.app/"
-            target="_blank"
-          >
-            <div class="proyecto">
-              <img src="images/p1.jpg" alt="" />
-              <div class="overlay">
-                <h3>EmpleaLink</h3>
-                <p>App Web</p>
-              </div>
-            </div>
-          </a>
-          <a href="https://socket-react-ui.vercel.app/" target="_blank">
-            <div class="proyecto">
-              <img src="images/p2.jpg" alt="" />
-              <div class="overlay">
-                <h3>MitChat</h3>
-                <p>App Web</p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://app-calculadora-react-bootstrap.vercel.app/"
-            target="_blank"
-          >
-            <div class="proyecto">
-              <img src="images/p3.jpg" alt="" />
-              <div class="overlay">
-                <h3>Calculadora</h3>
-                <p>App Web</p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://black-jack-jet-mu.vercel.app/"
-            target="_blank"
-          >
-            <div class="proyecto">
-              <img src="images/p4.png" alt="" />
-              <div class="overlay">
-                <h3>BlackJack</h3>
-                <p>App Web</p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://administrador-de-tareas-react-icons.vercel.app/"
-            target="_blank"
-          >
-            <div class="proyecto">
-              <img src="images/p5.jpg"">
-              <div class="overlay">
-                <h3>AdminTask</h3>
-                <p>App Web</p>
-              </div>
-            </div>
-          </a>
-          <a href="https://securyty-apps-5vf8.vercel.app/" target="_blank">
-            <div class="proyecto">
-              <img src="images/p6.jpg" alt="" />
-              <div class="overlay">
-                <h3>Seguridad Web</h3>
-                <p>Pagina Web</p>
-              </div>
-            </div>
-          </a>
-          <a href="https://ksanchez87.github.io/todo-js/" target="_blank">
-            <div class="proyecto">
-              <img src="images/p7.png" alt="" />
-              <div class="overlay">
-                <h3>AdminTask V2</h3>
-                <p>App Web</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-      <div class="contenido-seccion">
-        <h2>CONTACTO</h2>
-        <div class="fila">
-          <a
-            href="https://wa.me/573207849230?text=Hola%20Santiago,%20he%20revisado%20tu%20portafolio.%20Me%20gustaría%20conversar%20contigo."
-            target="_blank"
-          >
-            <img src="images/whatsapp.png" alt="whatsapp" />
-          </a>
-          <a
-            href="mailto:santiago23598@gmail.com?subject=PORTAFOLIO&body=Hola Santiago,%20he%20revisado%20tu%20Portafolio."
-            target="_blank"
-          >
-            <img src="images/gmail.png" alt="gmail" />
-          </a>
-        </div>
-      </div>
-    </section>
 
     <!-- footer -->
     <footer>
@@ -601,6 +772,14 @@
         ></a>
       </div>
     </footer>
+
+    <!-- Modal para el certificado -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <button id="closeModal" class="close-btn">&times;</button>
+        <img src="images/c-laboral.png" alt="Certificado Almacontact">
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
