@@ -1363,7 +1363,6 @@ body, .container, .static-card, .main-content, .inicio, .sobremi, .skills, .curr
 .portfolio {
   background: linear-gradient(180deg, #0a0e17 0%, #1a1f2c 100%);
   color: #fff;
-  padding: 80px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -1710,7 +1709,7 @@ body, .container, .static-card, .main-content, .inicio, .sobremi, .skills, .curr
     font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 1rem;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
   }
 
   .portfolio .proyecto-tags {
@@ -3314,7 +3313,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .hero-content {
-    padding: 4rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .hero-content::before {

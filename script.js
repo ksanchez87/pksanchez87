@@ -98,7 +98,7 @@ function resetAndAnimateStats() {
 function resetAndTypeSubtitle() {
     const subtitleText = document.querySelector('.subtitle-text');
     if (subtitleText) {
-        const subtitleContent = "Aplicaciones web & Desarrollo de software";
+        const subtitleContent = "Aplicaciones web - Desarrollo de software";
         typeWriter(subtitleText, subtitleContent, 100, () => {
             setTimeout(() => {
                 resetAndTypeSubtitle();
