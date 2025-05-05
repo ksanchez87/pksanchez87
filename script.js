@@ -242,8 +242,8 @@ document.addEventListener('click', (event) => {
 
 document.getElementById("downloadCV").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "./downloads/KedinSantiagoSánchezArangoHV.pdf"; 
-    link.download = "KedinSantiagoSánchezArangoHV.pdf"; 
+    link.href = "./downloads/KedinSantiagoSanchezArangoHDV.pdf"; 
+    link.download = "KedinSantiagoSanchezArangoHDV.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
