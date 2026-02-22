@@ -263,7 +263,7 @@ document.addEventListener("click", (event) => {
 
 document.getElementById("downloadCV").addEventListener("click", function () {
   const link = document.createElement("a");
-  link.href = "./downloads/KedinSantiagoSanchezArangoHDV.pdf";
+  link.href = "./downloads/Kedin_Santiago_Sanchez_HV_2025.docx.pdf";
   link.download = "KedinSantiagoSanchezArangoHDV.pdf";
   document.body.appendChild(link);
   link.click();
